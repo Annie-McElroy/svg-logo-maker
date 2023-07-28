@@ -42,10 +42,10 @@ function questions() {
 }
 
 
-let svgString = "";
 
 function generateSVG(response) {
-
+    
+    let svgString = "";
     let shapeOption;
 
     if (response.shape === 'Triangle') {
