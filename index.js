@@ -42,10 +42,10 @@ function questions() {
 }
 
 
+let svgString = "";
 
 function generateSVG(response) {
     
-    let svgString = "";
     let shapeOption;
 
     if (response.shape === 'Triangle') {
@@ -58,6 +58,7 @@ function generateSVG(response) {
         console.log("Invalid shape!")
     }
 
+    shapeOption
     shapeOption.setColor(response.shapeColor);
     console.log(shapeOption)
 
