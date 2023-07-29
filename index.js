@@ -1,8 +1,10 @@
+// Importing all necessary files
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Square, Circle} = require('./lib/shapes.js')
 const SVG = require('./lib/svg.js');
 
+// Function to prompt questions
 function questions() {
     inquirer
         .prompt([
@@ -41,9 +43,10 @@ function questions() {
         })
 }
 
-
+// Global empty string to generate string for SVG
 let svgString = "";
 
+// Function to generate SVG with responses
 function generateSVG(response) {
     
     let shapeOption;
@@ -65,9 +68,10 @@ function generateSVG(response) {
     svgString = svg.render()
 }
 
+// Function to write the SVG file
 function writeToFile(filename, data) {
     fs.writeFile(filename, data, (err) =>
-    err ? console.log(err) : console.log('Logo created!!'))
+    err ? console.log(err) : console.log('Generated logo.svg!!'))
 }
 
 questions()
