@@ -54,13 +54,9 @@ function generateSVG(response) {
         shapeOption = new Square()
     } else if (response.shape === 'Circle') {
         shapeOption = new Circle()
-    } else {
-        console.log("Invalid shape!")
     }
 
-    shapeOption
     shapeOption.setColor(response.shapeColor);
-    console.log(shapeOption)
 
 
     const svg = new SVG();
