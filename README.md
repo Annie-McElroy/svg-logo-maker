@@ -18,11 +18,14 @@ Git clone the repository.
 Please make sure that Inquirer and Jest dependencies has been downloaded. If not, please run the following command:
 
 `npm i inquirer@8.2.4`
+
 `npm i jest`
 
 This will install the Inquirer and Jest packages and version which is necessary for the application to run in. Learn more about [Inquirier](https://www.npmjs.com/package/inquirer) and [Jest](https://www.npmjs.com/package/jest)
 
   ## Usage
+
+[Recording of Application](https://drive.google.com/file/d/10ENnS4VtGkTzdl_KPWb7t9jylQyaD5e3/view)
 
 To generate a SVG logo, please run the following command in your integrated terminal for this repository:
 
@@ -31,9 +34,11 @@ To generate a SVG logo, please run the following command in your integrated term
 Answer the following prompt questions and your logo will be created with your input and selections.
 
 ![Screenshot of prompt questions](./assets/images/svg_generator.png)
+
+Result example after answering the prompts:
+
 ![Screenshot of example logo that says SVG in a circle](./assets/images/svg_logo_example.png)
 
-[Recording of Application](https://drive.google.com/file/d/10ENnS4VtGkTzdl_KPWb7t9jylQyaD5e3/view)
 
   ## License
 
